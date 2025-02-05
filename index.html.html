@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Moda Libre</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #8d1431, #e45792);
+            color: white;
+            padding: 40px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centrado */
+            text-align: center; /* Centrado */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #e45792;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            justify-items: center; /* Centrado de los productos */
+        }
+
+        .producto {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+            text-align: center; /* Centrado */
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            opacity: 0.9;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 400px; /* Aumentamos la altura de las imágenes */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover img {
+            transform: scale(1.1);
+        }
+
+        .producto h3 {
+            margin: 20px 0;
+            font-size: 22px;
+            color: #8d1431;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .producto p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .precio {
+            background-color: #e45792;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px;
+            display: inline-block;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .varios-colores {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center; /* Centrado */
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .varios-colores h2 {
+            font-size: 24px;
+            color: #8d1431;
+            font-weight: 600;
+        }
+
+        .varios-colores p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #8d1431;
+            color: white;
+            padding: 30px;
+            text-align: center; /* Centrado */
+            font-size: 16px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #e45792;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo Moda Libre">
+        <h1>Catálogo de Moda Libre</h1>
+    </header>
+
+    <main>
+        <div class="varios-colores">
+            <h2>¡Colores pueden variar según disponibilidad!</h2>
+            <p>Los productos pueden presentarse en diferentes colores. Por favor consulta la disponibilidad antes de realizar tu pedido. ¡Gracias por elegirnos!</p>
+        </div>
+
+        <section class="catalogo">
+            <div class="producto">
+                <img src="jersey.jpg" alt="Polo corte clasico economico">
+                <h3>Producto 1</h3>
+                <p>Polos de algodón jersey reactivo, perfectos para cualquier ocasión, con ajuste moderno y colores duraderos.</p>
+                <div class="precio">S/ 102.00 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="pima.jpg" alt="Polo corte clasico Premium">
+                <h3>Producto 2</h3>
+                <p>Polos de algodón Pima 100% peruano, ideales para quienes buscan lujo, suavidad y durabilidad en su ropa.</p>
+                <div class="precio">S/ 150.00 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="viviri.jpeg" alt="Biviris de tira">
+                <h3>Producto 3</h3>
+                <p>Bividis de algodón rib reactivos, confort y estilo combinados para un ajuste perfecto y duradero.</p>
+                <div class="precio">S/ 60.00 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="leggins.jpeg" alt="Legging">
+                <h3>Producto 4</h3>
+                <p>Leggins de suplex que se adaptan a tu figura con un ajuste cómodo y favorecedor para cualquier actividad.</p>
+                <div class="precio">S/ 120.00 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="polo rib.jpeg" alt="Polos rib">
+                <h3>Producto 5</h3>
+                <p>Polos rib reactivos, ideales para mantenerte fresco y cómodo durante los días calurosos de verano.</p>
+                <div class="precio">S/ 108.00 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="pantalon.jpeg" alt="pantalones">
+                <h3>Producto 6</h3>
+                <p>Pantalones Baby Rib que combinan confort y estilo, para un look fresco y versátil.</p>
+                <div class="precio">S/ 69.60 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="pantalon p.jpg" alt="Pantalones piel de durazno">
+                <h3>Producto 7</h3>
+                <p>Pantalón de Piel de Durazno, suave al tacto, perfecto para una comodidad única y un ajuste elegante.</p>
+                <div class="precio">S/ 79.20 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="falda.jpg" alt="falda short">
+                <h3>Producto 8</h3>
+                <p>Falda short Stone, cómoda y moderna, ideal para cualquier ocasión con un diseño versátil.</p>
+                <div class="precio">S/ 150.00 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="vestido.jpeg" alt="vestido">
+                <h3>Producto 9</h3>
+                <p>Vestidos cortos de algodón rib, suaves y cómodos, perfectos para resaltar tu figura con estilo.</p>
+                <div class="precio">S/ 168.00 (docena)</div>
+            </div>
+
+            <div class="producto">
+                <img src="manga.jpeg" alt="manga larga">
+                <h3>Producto 10</h3>
+                <p>Polos de manga larga en rib, cómodos y ajustados, perfectos para todo tipo de ocasión.</p>
+                <div class="precio">S/ 132.00 (docena)</div>
+            </div>
+            <div class="producto">
+                <img src="bata.jpeg" alt="Batas">
+                <h3>Producto 10</h3>
+                <p>Relájate con estilo con nuestras batas frescas, diseñadas para brindarte comodidad durante los días cálidos. Fabricadas con materiales ligeros y transpirables como algodón, estas batas cuentan con estampados vibrantes y modernos que aportan un toque de frescura y alegría.</p>
+                <div class="precio">S/ 60.00 (docena)</div>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Información de la empresa</h2>
+            <p>Dirección: Av. Parinacochas 740-La victoria, lima, Perú</p>
+            <p>Teléfono: +51 919 548 520 </p>
+            <p>Email: modalibre08@gmail.com </p>
+            <p>Síguenos en redes sociales:</p>
+            <p>
+                <a href="https://www.tiktok.com/@moda_libre?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a> / 
+                <a href="https://wa.link/d26gek" target="_blank">WhatsApp</a>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
